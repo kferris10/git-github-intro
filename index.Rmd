@@ -1,0 +1,63 @@
+---
+title: "An Introduction to Git and GitHub"
+author: "Kevin"
+date: "Monday, February 23, 2015"
+output:
+  pdf_document:
+    highlight: kate
+    number_sections: yes
+  html_document:
+    highlight: kate
+    theme: united
+---
+
+# Introduction
+
+What we'll cover today:
+
+1. [Git](http://git-scm.com/) is a free and open source version control system.  It makes development more friendly by keeping track of all your changes for you.
+2. [GitHub](https://github.com/) is a web based hosting service.  It allows use to put your projects online so that other people can learn about them and contribute.
+
+# Why Should I Care
+
+- Almost everything is on GitHub
+- Git and GitHub combine to make development and collaboration easy
+- It's an excellent way to show off your code/projects/analyses with others
+- It's really easy to create web pages, documentation, or even your own web site!
+- They're free!
+
+# The Basic Git Workflow
+
+## When you start a new project
+
+1. Use `cd` to navigate to the directory
+2. Use `git init` to initialize a new git repository
+3. Use `git status` to see what's going on
+4. Use `git add --all` to tell git to track all files
+5. Use `git commit -m "Initial commit"` to store your files
+
+## After you've made some edits
+
+1. Use `git status` to see what's changed
+2. Use `git add list-of-files` to prepare the changes
+3. Use `git commit -m "commit message"` to record your files
+4. Use `git status` to check the current status
+
+## Creating a GitHub repository
+
+1. Login to GitHub and create a new repository
+2. Use `git remote add origin https://github.com/username/reponame.git` to create a pointer named *origin*.  This tells git where the GitHub repository is located.
+3. Use `git push -u origin master` to send your repository to GitHub
+
+# More Resources
+
+- [Collaboration and time travel: version control with git, github and RStudio](http://www.rstudio.com/resources/webinars/) presented by Rstudio and Hadley Wickham!
+- Github's guide to [Set up Git](https://help.github.com/articles/set-up-git/)
+- [Setting up Git through RStudio](http://christianlemp.com/blog/2014/02/05/How-I-Manage-Data-Projects-with-RStudio-and-Git.html) (Part 1)
+- [Using Branches with git](http://christianlemp.com/blog/2014/02/13/How-I-Manage-Data-Projects-with-RStudio-and-Git-Part-2.html) (Part 2).  Definitely follow the link he posts.  It's fantastic. 
+- [GitHub Pages](https://pages.github.com/) These are how you can create web pages using GitHub
+- Code School's [Try Git](https://try.github.io/) tutorial
+- Karl Broman's [git/github guide](http://kbroman.org/github_tutorial/)
+- [Slidify](http://slidify.org/).  This is how I got started (though I would not recommend getting started by trying to figure out Slidify).  I've also not yet been able to get the `publish` function to work on a Windows machine. 
+
+
